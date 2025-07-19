@@ -1,0 +1,88 @@
+---
+title: "Manual: Git e Github Além de Conceitos Básicos de Python"
+author: "Vívian Germano da Silva"
+lang: pt # Linguagem em português
+format:
+  html:
+    theme: default
+    toc: true
+    grid:
+      margin-width: 300px
+execute:
+  echo: true
+reference-location: margin
+citation-location: margin
+---
+# Apresentação 
+Este manual irá abordar conceitos iniciais de **Git Github** e **Python** além
+de demonstrações das funcionalidades com objetivo de instruir 
+
+# Git e GitHub
+
+## Como surgiu 
+***Uma breve História do Git:***
+
+2005: O Git foi criado por Linus Torvalds, o mesmo criador do Linux.
+
+Motivo: O kernel Linux era mantido com um sistema proprietário chamado BitKeeper. Quando a licença foi revogada, a comunidade precisou de uma solução própria.
+
+Linus criou o Git com foco em velocidade, integridade e suporte ao trabalho distribuído.
+
+2006 em diante: Git se tornou o padrão de controle de versão em muitos projetos, especialmente em projetos de código aberto.
+
+***Uma breve História do GitHub:***
+
+2008: Fundado por Tom Preston-Werner, Chris Wanstrath e PJ Hyett.
+
+O objetivo era facilitar o uso do Git com uma interface amigável, e incentivar a colaboração em projetos open-source.
+
+2012: GitHub já era a maior plataforma de código-fonte do mundo.
+
+2018: GitHub foi adquirido pela Microsoft por US$ 7,5 bilhões.
+
+A aquisição gerou desconfiança inicial, mas a Microsoft manteve o GitHub aberto e investiu em melhorias, como o GitHub Copilot e integração com Azure.
+
+::: column-margin
+Referências:
+
+[Site oficial do Git](https://github.com/about?locale=pt-BR) 
+
+[História do GitHub - Wikipedia (EN)](https://en.wikipedia.org/wiki/GitHub)
+
+[Entrevista com Linus Torvalds sobre o Git (2007)](https://www.linuxfoundation.org/blog/blog/interview-with-linus-torvalds-about-git/)
+
+[GitHub: About page](https://github.com/about?locale=pt-BR)
+
+[Microsoft adquire GitHub - The Verge (2018)](https://www.theverge.com/2018/6/4/17424472/microsoft-github-acquisition)
+
+
+:::
+
+## O que são
+
+**Git** é um sistema de controle de versões que permite rastrear mudanças no código.  
+**GitHub** é uma plataforma online onde podemos armazenar e compartilhar projetos versionados com Git.
+
+
+
+## Para que servem
+
+- Controlar versões do seu código
+- Colaborar com outras pessoas
+- Armazenar projetos na nuvem (com GitHub)
+
+## Comandos básicos
+
+
+- git init       
+- git add .      
+- git commit -m 
+- git push       
+- git pull       
+- git clone URL 
+
+
+ 
+
+
+
