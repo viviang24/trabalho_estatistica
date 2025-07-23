@@ -1,1 +1,1 @@
-# trabalho-github-estat-stica
+# trabalho-github-estatistica
