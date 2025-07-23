@@ -83,7 +83,7 @@ Referências:
 - git diff
 - git log 
 
-# Primeiros Passos 
+## Primeiros Passos 
 
 ### Onde baixar e como instalar o Git
 
@@ -203,7 +203,79 @@ Mostra o histórico de commits com data, autor e mensagem.
  
 *Tudo que estiver dentro da sua pasta será enviado para o Github com comandos específicos de sua precisão.*
 
-  Caso queira voltar algum passo, você pode usar o Git checkout e combinar com o git `main` mais o código hash que ele fornece: 
+  Caso queira voltar algum passo, você pode usar o git log e combinar com o git checkout mais o código hash que ele fornece: 
+
+![comando para o código hash](imagens/Captura%20de%20tela%202025-07-23%20144512b.png)
+
+Pegamos o código fornecido e digitamos o git checkout: 
+
+![código hash](imagens/Captura%20de%20tela%202025-07-23%20144512c.png)
+
+Se por acaso o usuário estiver em outro local com outra máquina ele pode fazer uma clonagem do seu repositório e usar normalmente. 
+
+``` bash 
+Git clone 
+
+```
+Copia um repositório remoto para seu computador.
+
+No seu Github, terá a opção de copiar código. 
+
+![imagem do Github](imagens/Captura%20de%20tela%202025-07-23%20163129.png)
+
+Depois de copiado, com botão direito do mouse clique em "``Paste``" no seu bash. 
 
 
+![comando git clone](imagens/Captura%20de%20tela%202025-07-23%20163308.png)
 
+Agora sua pasta estará igual ao do seu repositório.
+
+# Introdução ao Python
+
+O Python é uma linguagem de programção de alto nível, ou seja, de fácil compreensão e próxima da nossa linguagem. 
+
+Criada para melhor manipulação de grande volume de dados. Para isso, temos bibliotecas como:
+
+- Pandas
+- Numpy
+- Matplotlib
+- Requests 
+
+Para poder usar o Python, inicialmente teremos que usar o pip.
+
+## Pip
+
+Gerenciador de pacotes do Python, serve para instalar, atualizar ou remover bibliotecas. 
+
+Para instalar os pacotes usamos:
+
+``` bash 
+pip install "nome do pacote" 
+
+```
+
+Pode ser utilizado em qualquer terminal do seu computador, basta ter o Python instalado na máquina. 
+
+## Primeiros Passos 
+
+### Onde baixar e como instalar o Python 
+
+O Python pode ser baixado através do <https://www.python.org/downloads/>
+
+![website do Python](imagens/Captura%20de%20tela%202025-07-23%20175458.png)
+
+::: callout-important
+*lembre-se de executar como administrador clicando com o botão direito do mouse depois de baixado e seguir as instruções da instalação.*
+:::
+
+Se quiser ter um melhor desempenho para manipular os seus dados, será necessário baixar extensões como Anaconda pelo <https://www.anaconda.com/download> e Jupyter pelo <https://jupyter.org/>.  
+
+Para trabalharmos com a linguagem, devemos utilizar um Ambiente de Desenvolvimento Integrado `IDE`. Com ele facilitaremos nossas atividades, com uma melhor visualização e desempenho.
+
+Exemplo de algumas ide:
+
+- Vscode;
+- Positron; 
+- Jupyter Notebook.
+
+ 

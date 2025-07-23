@@ -89,12 +89,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#o-que-são" id="toc-o-que-são" class="nav-link" data-scroll-target="#o-que-são">O que são</a></li>
   <li><a href="#para-que-servem" id="toc-para-que-servem" class="nav-link" data-scroll-target="#para-que-servem">Para que servem</a></li>
   <li><a href="#comandos-básicos" id="toc-comandos-básicos" class="nav-link" data-scroll-target="#comandos-básicos">Comandos básicos</a></li>
-  </ul></li>
   <li><a href="#primeiros-passos" id="toc-primeiros-passos" class="nav-link" data-scroll-target="#primeiros-passos">Primeiros Passos</a>
   <ul class="collapse">
   <li><a href="#onde-baixar-e-como-instalar-o-git" id="toc-onde-baixar-e-como-instalar-o-git" class="nav-link" data-scroll-target="#onde-baixar-e-como-instalar-o-git">Onde baixar e como instalar o Git</a></li>
   </ul></li>
+  </ul></li>
   <li><a href="#usando-comandos-no-git" id="toc-usando-comandos-no-git" class="nav-link" data-scroll-target="#usando-comandos-no-git">Usando comandos no Git</a></li>
+  <li><a href="#introdução-ao-python" id="toc-introdução-ao-python" class="nav-link" data-scroll-target="#introdução-ao-python">Introdução ao Python</a>
+  <ul class="collapse">
+  <li><a href="#pip" id="toc-pip" class="nav-link" data-scroll-target="#pip">Pip</a></li>
+  <li><a href="#primeiros-passos-1" id="toc-primeiros-passos-1" class="nav-link" data-scroll-target="#primeiros-passos-1">Primeiros Passos</a>
+  <ul class="collapse">
+  <li><a href="#onde-baixar-e-como-instalar-o-python" id="toc-onde-baixar-e-como-instalar-o-python" class="nav-link" data-scroll-target="#onde-baixar-e-como-instalar-o-python">Onde baixar e como instalar o Python</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -183,9 +191,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>git log</li>
 </ul>
 </section>
-</section>
-<section id="primeiros-passos" class="level1">
-<h1>Primeiros Passos</h1>
+<section id="primeiros-passos" class="level2">
+<h2 class="anchored" data-anchor-id="primeiros-passos">Primeiros Passos</h2>
 <section id="onde-baixar-e-como-instalar-o-git" class="level3">
 <h3 class="anchored" data-anchor-id="onde-baixar-e-como-instalar-o-git">Onde baixar e como instalar o Git</h3>
 <p>O <code>Git</code> pode ser instalado através do link <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a> de acordo com o sistema operacional da sua máquina.</p>
@@ -223,6 +230,7 @@ Importante
 </figure>
 </div>
 <p>Depois de preenchido você deve personalizar seu usuário do Github.</p>
+</section>
 </section>
 </section>
 <section id="usando-comandos-no-git" class="level1">
@@ -288,7 +296,92 @@ Importante
 <div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Mostra o histórico de commits com data, autor e mensagem.</p>
 <p><em>Tudo que estiver dentro da sua pasta será enviado para o Github com comandos específicos de sua precisão.</em></p>
-<p>Caso queira voltar algum passo, você pode usar o Git checkout e combinar com o git <code>main</code> mais o código hash que ele fornece:</p>
+<p>Caso queira voltar algum passo, você pode usar o git log e combinar com o git checkout mais o código hash que ele fornece:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-23%20144512b.png" class="img-fluid figure-img"></p>
+<figcaption>comando para o código hash</figcaption>
+</figure>
+</div>
+<p>Pegamos o código fornecido e digitamos o git checkout:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-23%20144512c.png" class="img-fluid figure-img"></p>
+<figcaption>código hash</figcaption>
+</figure>
+</div>
+<p>Se por acaso o usuário estiver em outro local com outra máquina ele pode fazer uma clonagem do seu repositório e usar normalmente.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Git</span> clone </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Copia um repositório remoto para seu computador.</p>
+<p>No seu Github, terá a opção de copiar código.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-23%20163129.png" class="img-fluid figure-img"></p>
+<figcaption>imagem do Github</figcaption>
+</figure>
+</div>
+<p>Depois de copiado, com botão direito do mouse clique em “<code>Paste</code>” no seu bash.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-23%20163308.png" class="img-fluid figure-img"></p>
+<figcaption>comando git clone</figcaption>
+</figure>
+</div>
+<p>Agora sua pasta estará igual ao do seu repositório.</p>
+</section>
+<section id="introdução-ao-python" class="level1">
+<h1>Introdução ao Python</h1>
+<p>O Python é uma linguagem de programção de alto nível, ou seja, de fácil compreensão e próxima da nossa linguagem.</p>
+<p>Criada para melhor manipulação de grande volume de dados. Para isso, temos bibliotecas como:</p>
+<ul>
+<li>Pandas</li>
+<li>Numpy</li>
+<li>Matplotlib</li>
+<li>Requests</li>
+</ul>
+<p>Para poder usar o Python, inicialmente teremos que usar o pip.</p>
+<section id="pip" class="level2">
+<h2 class="anchored" data-anchor-id="pip">Pip</h2>
+<p>Gerenciador de pacotes do Python, serve para instalar, atualizar ou remover bibliotecas.</p>
+<p>Para instalar os pacotes usamos:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="st">"nome do pacote"</span> </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Pode ser utilizado em qualquer terminal do seu computador, basta ter o Python instalado na máquina.</p>
+</section>
+<section id="primeiros-passos-1" class="level2">
+<h2 class="anchored" data-anchor-id="primeiros-passos-1">Primeiros Passos</h2>
+<section id="onde-baixar-e-como-instalar-o-python" class="level3">
+<h3 class="anchored" data-anchor-id="onde-baixar-e-como-instalar-o-python">Onde baixar e como instalar o Python</h3>
+<p>O Python pode ser baixado através do <a href="https://www.python.org/downloads/" class="uri">https://www.python.org/downloads/</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-23%20175458.png" class="img-fluid figure-img"></p>
+<figcaption>website do Python</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>lembre-se de executar como administrador clicando com o botão direito do mouse depois de baixado e seguir as instruções da instalação.</em></p>
+</div>
+</div>
+<p>Se quiser ter um melhor desempenho para manipular os seus dados, será necessário baixar extensões como Anaconda pelo <a href="https://www.anaconda.com/download" class="uri">https://www.anaconda.com/download</a> e Jupyter pelo <a href="https://jupyter.org/" class="uri">https://jupyter.org/</a>.</p>
+<p>Para trabalharmos com a linguagem, devemos utilizar um Ambiente de Desenvolvimento Integrado <code>IDE</code>. Com ele facilitaremos nossas atividades, com uma melhor visualização e desempenho.</p>
+<p>Exemplo de algumas ide:</p>
+<ul>
+<li>Vscode;</li>
+<li>Positron;</li>
+<li>Jupyter Notebook.</li>
+</ul>
+<p>Quando falamos na área de analise e ciência estatística, a programção faz parte do essêncial e a linguagem python</p>
+</section>
+</section>
 </section>
 
 </main>
