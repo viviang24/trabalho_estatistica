@@ -203,7 +203,7 @@ Mostra o histórico de commits com data, autor e mensagem.
  
 *Tudo que estiver dentro da sua pasta será enviado para o Github com comandos específicos de sua precisão.*
 
- 
+  Caso queira voltar algum passo, você pode usar o Git checkout e combinar com o git `main` mais o código hash que ele fornece: 
 
 
 
