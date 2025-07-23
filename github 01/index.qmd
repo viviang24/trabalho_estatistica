@@ -1,5 +1,5 @@
 ---
-title: "Manual: Git e Github Além de Conceitos Básicos de Python"
+title: "Manual: Uma Introdução ao Git e Github Além de Conceitos Básicos de Python"
 author: "Vívian Germano da Silva"
 lang: pt # Linguagem em português
 format:
@@ -79,8 +79,129 @@ Referências:
 - git commit -m 
 - git push       
 - git pull       
-- git clone URL 
+- git status 
+- git diff
+- git log 
 
+# Primeiros Passos 
+
+### Onde baixar e como instalar o Git
+
+O `Git` pode ser instalado através do link <https://git-scm.com/downloads>
+de acordo com o sistema operacional da sua máquina. 
+
+![website do git](imagens\Captura de tela 2025-07-18 224555.png) 
+
+::: callout-important
+*lembre-se de executar como administrador clicando com o botão direito do mouse depois de baixado e seguir as instruções da instalação.*
+:::
+
+Agora devemos criar uma conta no Github pelo link <https://github.com>
+
+![início do github](imagens\Captura de tela 2025-07-19 004733.png) 
+
+Em seguida devemos preencher as lacunas seguintes: 
+
+![aba preenchimento do github](imagens/Captura de tela 2025-07-19 003944.png)
+ 
+Depois de preenchido você deve personalizar seu usuário do Github.
+
+
+# Usando comandos no Git 
+
+Passo 1: 
+
+- Criar uma pasta na sua máquina:
+
+![criando pasta do zero](imagens/Captura%20de%20tela%202025-07-20%20184100.png)
+
+Passo 2:
+
+- Dentro da pasta, clique com o botão direito do mouse e selecione a opção abaixo: 
+
+![abrir o bash do git](imagens/Captura%20de%20tela%202025-07-20%20184546.png)
+
+Passo 3: 
+
+- Após aberto o bash, inicie com os seguintes comandos: 
+
+``` bash 
+git config --global user.name "nome de usuário do github"
+
+```
+
+Preencha o campo entre aspas " " e aperte enter e em seguida digite e repita o preenchimento:
+
+``` bash 
+git config --global user.emaill "seu emaill usado na conta do github"
+
+```
+<br><br>
+ Agora iremos seguir na sequência de comandos:
+<br><br>
+``` bash 
+git init 
+
+```
+Cria um novo repositório Git no diretório atual.
+
+``` bash 
+git status 
+
+```
+Mostra o que foi modificado, o que está pronto para commit, e o que ainda não foi adicionado.
+
+
+``` bash 
+git add [arquivo]
+
+```
+Adiciona um arquivo específico à área de stage (prepara para commit).
+
+
+``` bash 
+git commit -m 
+
+```
+Salva as mudanças com uma mensagem descritiva. É como tirar uma "foto" do projeto nesse momento.
+
+
+``` bash 
+git push 
+
+```
+Envia os commits do seu computador para o repositório remoto do Github.  
+
+::: callout-important
+Após o "git push" aparecerá uma aba de permissão de conexão com seu Github, confirme ela e abra seu Github para ver seu repositório enviado. 
+:::
+
+Se quiser modificar, acompanhar andamento e modificações:
+``` bash 
+git pull
+
+```
+Atualiza seu repositório local com as últimas mudanças do repositório remoto.
+
+``` bash 
+git status 
+
+```
+Mostra o que foi modificado, o que está pronto para commit, e o que ainda não foi adicionado.
+
+``` bash 
+git diff
+
+```
+Mostra as diferenças entre os arquivos modificados e os últimos commits.
+
+``` bash 
+git log 
+
+```
+Mostra o histórico de commits com data, autor e mensagem.
+ 
+*Tudo que estiver dentro da sua pasta será enviado para o Github com comandos específicos de sua precisão.*
 
  
 
