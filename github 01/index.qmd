@@ -260,7 +260,7 @@ Pode ser utilizado em qualquer terminal do seu computador, basta ter o Python in
 
 ### Onde baixar e como instalar o Python 
 
-O Python pode ser baixado através do <https://www.python.org/downloads/>
+O Python pode ser baixado através do <https://www.python.org/downloads/> de acordo com o sistema operacional da sua máquina.
 
 ![website do Python](imagens/Captura%20de%20tela%202025-07-23%20175458.png)
 
@@ -268,7 +268,9 @@ O Python pode ser baixado através do <https://www.python.org/downloads/>
 *lembre-se de executar como administrador clicando com o botão direito do mouse depois de baixado e seguir as instruções da instalação.*
 :::
 
-Se quiser ter um melhor desempenho para manipular os seus dados, será necessário baixar extensões como Anaconda pelo <https://www.anaconda.com/download> e Jupyter pelo <https://jupyter.org/>.  
+Se quiser ter um melhor desempenho para manipular os seus dados, será necessário baixar extensões como:
+
+ Anaconda pelo <https://www.anaconda.com/download> e Jupyter pelo <https://jupyter.org/>.  
 
 Para trabalharmos com a linguagem, devemos utilizar um Ambiente de Desenvolvimento Integrado `IDE`. Com ele facilitaremos nossas atividades, com uma melhor visualização e desempenho.
 
@@ -278,4 +280,59 @@ Exemplo de algumas ide:
 - Positron; 
 - Jupyter Notebook.
 
- 
+## Entendendo Estrutura de Dados 
+
+Quando trabalhamos com dados é necessário entendermos algumas estruturas para otmização de analises. 
+
+São exemplos: 
+
+- Int:``inteiros`` Números sem vírgula que tem como função fazer cálculos inteiros.
+``` bash 
+4 
+-50
+1000
+```
+- Float: ``float`` número com vírgula, ou seja, com casas decimais que também é usado para cálculos, medições etc. 
+``` bash
+8.99
+-3589
+0.5
+```
+- Str: ``strings`` texto entre aspas " ", usado para textos, nomes etc. 
+``` bash 
+"Julia" "cáqui" "olá, tudo bem?"
+```
+- Bool: ``booleanos`` é um valor lógico ``TRUE`` e ``FALSE`` que tem como função responder uma condição.
+``` bash 
+"100 = 5" FALSE
+6 > 5     TRUE
+```
+
+Usamos operadores 
+
+| Tipo               | Operador | Descrição                     | Exemplo            | Resultado     |
+|--------------------|----------|-------------------------------|--------------------|---------------|
+| Aritmético         | `+`      | Soma                          | `2 + 3`            | `5`           |
+| Aritmético         | `-`      | Subtração                     | `5 - 1`            | `4`           |
+| Aritmético         | `*`      | Multiplicação                 | `4 * 2`            | `8`           |
+| Aritmético         | `/`      | Divisão                       | `6 / 2`            | `3.0`         |
+| Aritmético         | `//`     | Divisão inteira               | `7 // 2`           | `3`           |
+| Aritmético         | `%`      | Resto da divisão              | `7 % 2`            | `1`           |
+| Aritmético         | `**`     | Potência                      | `2 ** 3`           | `8`           |
+| Comparação         | `==`     | Igual a                       | `3 == 3`           | `True`        |
+| Comparação         | `!=`     | Diferente de                  | `4 != 5`           | `True`        |
+| Comparação         | `>`      | Maior que                     | `5 > 3`            | `True`        |
+| Comparação         | `<`      | Menor que                     | `2 < 4`            | `True`        |
+| Comparação         | `>=`     | Maior ou igual                | `4 >= 4`           | `True`        |
+| Comparação         | `<=`     | Menor ou igual                | `3 <= 5`           | `True`        |
+| Lógico             | `and`    | E lógico                      | `True and False`   | `False`       |
+| Lógico             | `or`     | Ou lógico                     | `True or False`    | `True`        |
+| Lógico             | `not`    | Negação lógica                | `not True`         | `False`       |
+| Atribuição         | `=`      | Atribuição simples            | `x = 5`            | `x = 5`       |
+| Atribuição         | `+=`     | Soma e atribuição             | `x += 1`           | `x = x + 1`   |
+| Atribuição         | `-=`     | Subtração e atribuição        | `x -= 2`           | `x = x - 2`   |
+| Atribuição         | `*=`     | Multiplicação e atribuição    | `x *= 3`           | `x = x * 3`   |
+| Atribuição         | `/=`     | Divisão e atribuição          | `x /= 2`           | `x = x / 2`   |
+| Atribuição         | `**=`    | Potência e atribuição         | `x **= 2`          | `x = x ** 2`  |
+
+

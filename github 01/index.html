@@ -102,6 +102,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#onde-baixar-e-como-instalar-o-python" id="toc-onde-baixar-e-como-instalar-o-python" class="nav-link" data-scroll-target="#onde-baixar-e-como-instalar-o-python">Onde baixar e como instalar o Python</a></li>
   </ul></li>
+  <li><a href="#entendendo-estrutura-de-dados" id="toc-entendendo-estrutura-de-dados" class="nav-link" data-scroll-target="#entendendo-estrutura-de-dados">Entendendo Estrutura de Dados</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -351,7 +352,7 @@ Importante
 <h2 class="anchored" data-anchor-id="primeiros-passos-1">Primeiros Passos</h2>
 <section id="onde-baixar-e-como-instalar-o-python" class="level3">
 <h3 class="anchored" data-anchor-id="onde-baixar-e-como-instalar-o-python">Onde baixar e como instalar o Python</h3>
-<p>O Python pode ser baixado através do <a href="https://www.python.org/downloads/" class="uri">https://www.python.org/downloads/</a></p>
+<p>O Python pode ser baixado através do <a href="https://www.python.org/downloads/" class="uri">https://www.python.org/downloads/</a> de acordo com o sistema operacional da sua máquina.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imagens/Captura%20de%20tela%202025-07-23%20175458.png" class="img-fluid figure-img"></p>
@@ -371,7 +372,8 @@ Importante
 <p><em>lembre-se de executar como administrador clicando com o botão direito do mouse depois de baixado e seguir as instruções da instalação.</em></p>
 </div>
 </div>
-<p>Se quiser ter um melhor desempenho para manipular os seus dados, será necessário baixar extensões como Anaconda pelo <a href="https://www.anaconda.com/download" class="uri">https://www.anaconda.com/download</a> e Jupyter pelo <a href="https://jupyter.org/" class="uri">https://jupyter.org/</a>.</p>
+<p>Se quiser ter um melhor desempenho para manipular os seus dados, será necessário baixar extensões como:</p>
+<p>Anaconda pelo <a href="https://www.anaconda.com/download" class="uri">https://www.anaconda.com/download</a> e Jupyter pelo <a href="https://jupyter.org/" class="uri">https://jupyter.org/</a>.</p>
 <p>Para trabalharmos com a linguagem, devemos utilizar um Ambiente de Desenvolvimento Integrado <code>IDE</code>. Com ele facilitaremos nossas atividades, com uma melhor visualização e desempenho.</p>
 <p>Exemplo de algumas ide:</p>
 <ul>
@@ -379,8 +381,208 @@ Importante
 <li>Positron;</li>
 <li>Jupyter Notebook.</li>
 </ul>
-<p>Quando falamos na área de analise e ciência estatística, a programção faz parte do essêncial e a linguagem python</p>
 </section>
+</section>
+<section id="entendendo-estrutura-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="entendendo-estrutura-de-dados">Entendendo Estrutura de Dados</h2>
+<p>Quando trabalhamos com dados é necessário entendermos algumas estruturas para otmização de analises.</p>
+<p>São exemplos:</p>
+<ul>
+<li>Int:<code>inteiros</code> Números sem vírgula que tem como função fazer cálculos inteiros.</li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">4</span> </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-50</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="ex">1000</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Float: <code>float</code> número com vírgula, ou seja, com casas decimais que também é usado para cálculos, medições etc.</li>
+</ul>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">8.99</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-3589</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ex">0.5</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Str: <code>strings</code> texto entre aspas ” “, usado para textos, nomes etc.</li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Julia"</span> <span class="st">"cáqui"</span> <span class="st">"olá, tudo bem?"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Bool: <code>booleanos</code> é um valor lógico <code>TRUE</code> e <code>FALSE</code> que tem como função responder uma condição.</li>
+</ul>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="st">"100 = 5"</span> FALSE</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="ex">6</span> <span class="op">&gt;</span> 5     TRUE</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Usamos operadores</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 10%">
+<col style="width: 32%">
+<col style="width: 20%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo</th>
+<th>Operador</th>
+<th>Descrição</th>
+<th>Exemplo</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aritmético</td>
+<td><code>+</code></td>
+<td>Soma</td>
+<td><code>2 + 3</code></td>
+<td><code>5</code></td>
+</tr>
+<tr class="even">
+<td>Aritmético</td>
+<td><code>-</code></td>
+<td>Subtração</td>
+<td><code>5 - 1</code></td>
+<td><code>4</code></td>
+</tr>
+<tr class="odd">
+<td>Aritmético</td>
+<td><code>*</code></td>
+<td>Multiplicação</td>
+<td><code>4 * 2</code></td>
+<td><code>8</code></td>
+</tr>
+<tr class="even">
+<td>Aritmético</td>
+<td><code>/</code></td>
+<td>Divisão</td>
+<td><code>6 / 2</code></td>
+<td><code>3.0</code></td>
+</tr>
+<tr class="odd">
+<td>Aritmético</td>
+<td><code>//</code></td>
+<td>Divisão inteira</td>
+<td><code>7 // 2</code></td>
+<td><code>3</code></td>
+</tr>
+<tr class="even">
+<td>Aritmético</td>
+<td><code>%</code></td>
+<td>Resto da divisão</td>
+<td><code>7 % 2</code></td>
+<td><code>1</code></td>
+</tr>
+<tr class="odd">
+<td>Aritmético</td>
+<td><code>**</code></td>
+<td>Potência</td>
+<td><code>2 ** 3</code></td>
+<td><code>8</code></td>
+</tr>
+<tr class="even">
+<td>Comparação</td>
+<td><code>==</code></td>
+<td>Igual a</td>
+<td><code>3 == 3</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="odd">
+<td>Comparação</td>
+<td><code>!=</code></td>
+<td>Diferente de</td>
+<td><code>4 != 5</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td>Comparação</td>
+<td><code>&gt;</code></td>
+<td>Maior que</td>
+<td><code>5 &gt; 3</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="odd">
+<td>Comparação</td>
+<td><code>&lt;</code></td>
+<td>Menor que</td>
+<td><code>2 &lt; 4</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td>Comparação</td>
+<td><code>&gt;=</code></td>
+<td>Maior ou igual</td>
+<td><code>4 &gt;= 4</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="odd">
+<td>Comparação</td>
+<td><code>&lt;=</code></td>
+<td>Menor ou igual</td>
+<td><code>3 &lt;= 5</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td>Lógico</td>
+<td><code>and</code></td>
+<td>E lógico</td>
+<td><code>True and False</code></td>
+<td><code>False</code></td>
+</tr>
+<tr class="odd">
+<td>Lógico</td>
+<td><code>or</code></td>
+<td>Ou lógico</td>
+<td><code>True or False</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td>Lógico</td>
+<td><code>not</code></td>
+<td>Negação lógica</td>
+<td><code>not True</code></td>
+<td><code>False</code></td>
+</tr>
+<tr class="odd">
+<td>Atribuição</td>
+<td><code>=</code></td>
+<td>Atribuição simples</td>
+<td><code>x = 5</code></td>
+<td><code>x = 5</code></td>
+</tr>
+<tr class="even">
+<td>Atribuição</td>
+<td><code>+=</code></td>
+<td>Soma e atribuição</td>
+<td><code>x += 1</code></td>
+<td><code>x = x + 1</code></td>
+</tr>
+<tr class="odd">
+<td>Atribuição</td>
+<td><code>-=</code></td>
+<td>Subtração e atribuição</td>
+<td><code>x -= 2</code></td>
+<td><code>x = x - 2</code></td>
+</tr>
+<tr class="even">
+<td>Atribuição</td>
+<td><code>*=</code></td>
+<td>Multiplicação e atribuição</td>
+<td><code>x *= 3</code></td>
+<td><code>x = x * 3</code></td>
+</tr>
+<tr class="odd">
+<td>Atribuição</td>
+<td><code>/=</code></td>
+<td>Divisão e atribuição</td>
+<td><code>x /= 2</code></td>
+<td><code>x = x / 2</code></td>
+</tr>
+<tr class="even">
+<td>Atribuição</td>
+<td><code>**=</code></td>
+<td>Potência e atribuição</td>
+<td><code>x **= 2</code></td>
+<td><code>x = x ** 2</code></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 
