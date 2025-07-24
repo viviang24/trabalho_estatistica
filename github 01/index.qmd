@@ -304,11 +304,11 @@ São exemplos:
 ```
 - Bool: ``booleanos`` é um valor lógico ``TRUE`` e ``FALSE`` que tem como função responder uma condição.
 ``` bash 
-"100 = 5" FALSE
+100 = 5   FALSE
 6 > 5     TRUE
 ```
 
-Usamos operadores 
+Usamos operadores para calcular, comparar e atribuir:
 
 | Tipo               | Operador | Descrição                     | Exemplo            | Resultado     |
 |--------------------|----------|-------------------------------|--------------------|---------------|
@@ -336,3 +336,19 @@ Usamos operadores
 | Atribuição         | `**=`    | Potência e atribuição         | `x **= 2`          | `x = x ** 2`  |
 
 
+Vale ressaltar tipos de estruturas ``mutáveis`` podem ser alterados após operado e ``imutáveis`` nâo recebem alterações após operados. São eles:
+
+- Tuples: coleções ordenada imutáveis
+``` bash 
+idades = (3, 90, 100)  
+```
+
+- List: sequência ordenada que pode ter diferentes componentes mutáveis 
+``` bash
+time = [ "palmeiras", 12, "maior campeão nacional" ]
+``` 
+
+- Dict: dicionário de coleção de atribuições, valor ou chaves
+``` bash 
+empresa = { "id": 02 , "cpf": "000.000.000-00" , "email": "abcdef.gmail.com"}
+```
