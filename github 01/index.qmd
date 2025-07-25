@@ -256,6 +256,10 @@ pip install "nome do pacote"
 
 Pode ser utilizado em qualquer terminal do seu computador, basta ter o Python instalado na máquina. 
 
+::: callout-important
+*Pip está incluso nas versões a partir de 3.4 do python, caso sua versão seja inferior, será necessário instalar o pip de acordo com o sistema operacional da sua máquina.*
+:::
+
 ## Primeiros Passos 
 
 ### Onde baixar e como instalar o Python 
@@ -267,6 +271,7 @@ O Python pode ser baixado através do <https://www.python.org/downloads/> de aco
 ::: callout-important
 *lembre-se de executar como administrador clicando com o botão direito do mouse depois de baixado e seguir as instruções da instalação.*
 :::
+
 
 Se quiser ter um melhor desempenho para manipular os seus dados, será necessário baixar extensões como:
 
@@ -282,33 +287,33 @@ Exemplo de algumas ide:
 
 ## Entendendo Estrutura de Dados 
 
-Quando trabalhamos com dados é necessário entendermos algumas estruturas para otmização de analises. 
+Quando trabalhamos com dados é necessário entendermos algumas estruturas para otmização de análises. 
 
 São exemplos: 
 
-- Int:``inteiros`` Números sem vírgula que tem como função fazer cálculos inteiros.
+- 1. Int: ``inteiros`` Números sem vírgula mais comum na utilização de cálculos inteiros.
 ``` bash 
 4 
 -50
 1000
 ```
-- Float: ``float`` número com vírgula, ou seja, com casas decimais que também é usado para cálculos, medições etc. 
+- 2. Float: ``float`` número com vírgula, ou seja, com casas decimais muito usado para cálculos, medições. 
 ``` bash
 8.99
 -3589
 0.5
 ```
-- Str: ``strings`` texto entre aspas " ", usado para textos, nomes etc. 
+- 3. Str: ``strings`` texto entre aspas " ", usado para textos, nomes e outras variáveis consideradas textos. 
 ``` bash 
 "Julia" "cáqui" "olá, tudo bem?"
 ```
-- Bool: ``booleanos`` é um valor lógico ``TRUE`` e ``FALSE`` que tem como função responder uma condição.
+- 4. Bool: ``booleanos`` é um valor lógico ``TRUE`` e ``FALSE`` que tem como função responder uma condição.
 ``` bash 
-100 = 5   FALSE
-6 > 5     TRUE
+100 = 5  FALSE 
+6 > 5    TRUE
 ```
-
-Usamos operadores para calcular, comparar e atribuir:
+<br><br>
+Também usamos alguns operadores para calcular, comparar e atribuir:
 
 | Tipo               | Operador | Descrição                     | Exemplo            | Resultado     |
 |--------------------|----------|-------------------------------|--------------------|---------------|
@@ -335,20 +340,117 @@ Usamos operadores para calcular, comparar e atribuir:
 | Atribuição         | `/=`     | Divisão e atribuição          | `x /= 2`           | `x = x / 2`   |
 | Atribuição         | `**=`    | Potência e atribuição         | `x **= 2`          | `x = x ** 2`  |
 
+<br><br>
+Vale ressaltar tipos de estruturas ``mutáveis`` podem ser alterados após criado e ``imutáveis`` nâo recebem alterações após criado. São eles:
 
-Vale ressaltar tipos de estruturas ``mutáveis`` podem ser alterados após operado e ``imutáveis`` nâo recebem alterações após operados. São eles:
-
-- Tuples: coleções ordenada imutáveis
+- Tuples: Coleções ordenada imutáveis
 ``` bash 
 idades = (3, 90, 100)  
 ```
 
-- List: sequência ordenada que pode ter diferentes componentes mutáveis 
+- List: Sequência ordenada que pode ter diferentes componentes mutáveis 
 ``` bash
 time = [ "palmeiras", 12, "maior campeão nacional" ]
 ``` 
 
-- Dict: dicionário de coleção de atribuições, valor ou chaves
+- Dict: Dicionário de coleção de atribuições, valor ou chaves
 ``` bash 
 empresa = { "id": 02 , "cpf": "000.000.000-00" , "email": "abcdef.gmail.com"}
 ```
+<br><br>
+Para começarmos os próximos passos vamos abordar para que servem cada biblioteca citadas mais acima. 
+
+- ``Pandas``: Utilizado para ciência de dados, estatística, análises etc. Podemos fazer filtragens ler dados e organizar até grandes volumes de dados. 
+
+- ``Numpy``: Utilizado em cálculos científicos, machine learning e na álgebra linear. Podemos fazer operações matemáticas com matrizes e vetores. 
+
+- ``Matplotlib``: Mostra dados de forma mais visual juntamente com o ``pandas``. Com ele podemos criar gráficos para melhor visualização. 
+
+- ``Requests``: Utilizado para acessar sites, APIs públicas e automações web. Através dele conseguimos pegar dados da internet via API. 
+
+Todos podem ser baixados em um único comando em qualquer terminal ou prompt da sua máquina:
+
+ ``` bash 
+ pip install pandas numpy matplotlib requests
+
+```
+Importante lembrar que para começar utilizar essas bibliotecas temos que usar o seguinte comando: 
+
+``` bash 
+import pandas 
+import numpy 
+import matplotlib.pyplot as plt
+import requests
+
+```
+Podemos renomear bibliotecas abreviando para encurtar códigos utilizando o "``as``" e um apelido para a biblioteca:
+
+``` bash 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+```
+Depois desses passos, estaremos prontos para começar a programar.  
+
+## Estrutura de Controles 
+
+Quando falamos de otmização na programação, podemos nos referir a tipo de estruturas lógicas que nos permitem realizar tarefas eficazmente. 
+Dentro do python essas estruturas são usadas para tomar decisões no código, são elas as seguintes: 
+
+- ``if``: Executa enquanto a condição for verdadeira;
+
+- ``elif``: Se precisa de outra condição para ser analisada;
+
+- ``else``: Se nenhuma das condições for verdadeira.
+
+Exemplo de código usando o vscode como ide:
+
+![exemplo de if, elif e else](imagens/Captura%20de%20tela%202025-07-24%20194518.png)
+
+Me retorna:
+
+![retorno de if, elif e else](imagens/Captura%20de%20tela%202025-07-24%20195237.png)
+
+Se eu alterar meu saque para um valor maior que meu limite extra:
+
+![ alteração no exemplo de if, elif e else](imagens/Captura%20de%20tela%202025-07-24%20195835.png)
+
+Me retorna:
+
+![ retorno no exemplo de if, elif e else](imagens/Captura%20de%20tela%202025-07-24%20200207.png)
+
+<br><br>
+Para outros tipos de estruturas de controle:
+
+- ``for``: Usado para repetir algo várias vezes;
+
+Exemplo de código usando o vscode como ide: 
+
+![ exemplo usando o for ](imagens/Captura%20de%20tela%202025-07-24%20201518.png)
+
+me retorna: 
+![ retorno usando o for ](imagens/Captura%20de%20tela%202025-07-24%20200927.png)
+
+- ``while``: Repete enquanto a condição for verdadeira.
+
+![ exemplo usando while ](imagens/Captura%20de%20tela%202025-07-24%20201705.png)
+
+Me retorna: 
+
+![ retorno usando while ](imagens/Captura%20de%20tela%202025-07-24%20201822.png)
+
+##  Def, Parâmetros e Retorno
+
+Podemos chamar ``def`` como uma definição de código para executar uma tarefa específica. Criamos def para criar uma função dando nome a ela e ``parâmetro`` como um valor que será passado de fora para ela e um valor que será retornado como``retorno``.
+
+Um exemplo utilizando o vscode como ide:
+
+![ exemplo usando def com parâmetro e retorno ](imagens/Captura%20de%20tela%202025-07-24%20214817.png)
+
+Agora o retorno: 
+
+![  retorno usando def ](imagens/Captura%20de%20tela%202025-07-24%20214937.png)
+
+
+ 

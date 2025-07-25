@@ -103,6 +103,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#onde-baixar-e-como-instalar-o-python" id="toc-onde-baixar-e-como-instalar-o-python" class="nav-link" data-scroll-target="#onde-baixar-e-como-instalar-o-python">Onde baixar e como instalar o Python</a></li>
   </ul></li>
   <li><a href="#entendendo-estrutura-de-dados" id="toc-entendendo-estrutura-de-dados" class="nav-link" data-scroll-target="#entendendo-estrutura-de-dados">Entendendo Estrutura de Dados</a></li>
+  <li><a href="#estrutura-de-controles" id="toc-estrutura-de-controles" class="nav-link" data-scroll-target="#estrutura-de-controles">Estrutura de Controles</a></li>
+  <li><a href="#def-parâmetros-e-retorno" id="toc-def-parâmetros-e-retorno" class="nav-link" data-scroll-target="#def-parâmetros-e-retorno">Def, Parâmetros e Retorno</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -347,6 +349,19 @@ Importante
 <p>Para instalar os pacotes usamos:</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="st">"nome do pacote"</span> </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Pode ser utilizado em qualquer terminal do seu computador, basta ter o Python instalado na máquina.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Pip está incluso nas versões a partir de 3.4 do python, caso sua versão seja inferior, será necessário instalar o pip de acordo com o sistema operacional da sua máquina.</em></p>
+</div>
+</div>
 </section>
 <section id="primeiros-passos-1" class="level2">
 <h2 class="anchored" data-anchor-id="primeiros-passos-1">Primeiros Passos</h2>
@@ -385,30 +400,38 @@ Importante
 </section>
 <section id="entendendo-estrutura-de-dados" class="level2">
 <h2 class="anchored" data-anchor-id="entendendo-estrutura-de-dados">Entendendo Estrutura de Dados</h2>
-<p>Quando trabalhamos com dados é necessário entendermos algumas estruturas para otmização de analises.</p>
+<p>Quando trabalhamos com dados é necessário entendermos algumas estruturas para otmização de análises.</p>
 <p>São exemplos:</p>
 <ul>
-<li>Int:<code>inteiros</code> Números sem vírgula que tem como função fazer cálculos inteiros.</li>
+<li><ol type="1">
+<li>Int: <code>inteiros</code> Números sem vírgula mais comum na utilização de cálculos inteiros.</li>
+</ol></li>
 </ul>
 <div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">4</span> </span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-50</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="ex">1000</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Float: <code>float</code> número com vírgula, ou seja, com casas decimais que também é usado para cálculos, medições etc.</li>
+<li><ol start="2" type="1">
+<li>Float: <code>float</code> número com vírgula, ou seja, com casas decimais muito usado para cálculos, medições.</li>
+</ol></li>
 </ul>
 <div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">8.99</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-3589</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ex">0.5</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Str: <code>strings</code> texto entre aspas ” “, usado para textos, nomes etc.</li>
+<li><ol start="3" type="1">
+<li>Str: <code>strings</code> texto entre aspas ” “, usado para textos, nomes e outras variáveis consideradas textos.</li>
+</ol></li>
 </ul>
 <div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Julia"</span> <span class="st">"cáqui"</span> <span class="st">"olá, tudo bem?"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
+<li><ol start="4" type="1">
 <li>Bool: <code>booleanos</code> é um valor lógico <code>TRUE</code> e <code>FALSE</code> que tem como função responder uma condição.</li>
+</ol></li>
 </ul>
-<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">100</span> = 5   FALSE</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="ex">6</span> <span class="op">&gt;</span> 5     TRUE</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Usamos operadores para calcular, comparar e atribuir:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">100</span> = 5  FALSE </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="ex">6</span> <span class="op">&gt;</span> 5    TRUE</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br><br> Também usamos alguns operadores para calcular, comparar e atribuir:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -583,19 +606,121 @@ Importante
 </tr>
 </tbody>
 </table>
-<p>Vale ressaltar tipos de estruturas <code>mutáveis</code> podem ser alterados após operado e <code>imutáveis</code> nâo recebem alterações após operados. São eles:</p>
+<p><br><br> Vale ressaltar tipos de estruturas <code>mutáveis</code> podem ser alterados após criado e <code>imutáveis</code> nâo recebem alterações após criado. São eles:</p>
 <ul>
-<li>Tuples: coleções imutáveis</li>
+<li>Tuples: Coleções ordenada imutáveis</li>
 </ul>
 <div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">idades</span> = <span class="er">(</span><span class="ex">3,</span> 90, 100<span class="kw">)</span>  </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>List: sequência que pode ter diferentes componentes mutáveis</li>
+<li>List: Sequência ordenada que pode ter diferentes componentes mutáveis</li>
 </ul>
 <div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="bu">time</span> = [ <span class="st">"palmeiras"</span>, 12, <span class="st">"maior campeão nacional"</span> ]</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Dict: dicionário de coleção de atribuições, valor ou chaves</li>
+<li>Dict: Dicionário de coleção de atribuições, valor ou chaves</li>
 </ul>
 <div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">empresa</span> = { <span class="st">"id"</span>: 02 , <span class="st">"cpf"</span>: <span class="st">"000.000.000-00"</span> , <span class="st">"email"</span>: <span class="st">"abcdef.gmail.com"</span>}</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br><br> Para começarmos os próximos passos vamos abordar para que servem cada biblioteca citadas mais acima.</p>
+<ul>
+<li><p><code>Pandas</code>: Utilizado para ciência de dados, estatística, análises etc. Podemos fazer filtragens ler dados e organizar até grandes volumes de dados.</p></li>
+<li><p><code>Numpy</code>: Utilizado em cálculos científicos, machine learning e na álgebra linear. Podemos fazer operações matemáticas com matrizes e vetores.</p></li>
+<li><p><code>Matplotlib</code>: Mostra dados de forma mais visual juntamente com o <code>pandas</code>. Com ele podemos criar gráficos para melhor visualização.</p></li>
+<li><p><code>Requests</code>: Utilizado para acessar sites, APIs públicas e automações web. Através dele conseguimos pegar dados da internet via API.</p></li>
+</ul>
+<p>Todos podem ser baixados em um único comando em qualquer terminal ou prompt da sua máquina:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pandas numpy matplotlib requests</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Importante lembrar que para começar utilizar essas bibliotecas temos que usar o seguinte comando:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> pandas </span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> numpy </span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> matplotlib.pyplot as plt</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> requests</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Podemos renomear bibliotecas abreviando para encurtar códigos utilizando o “<code>as</code>” e um apelido para a biblioteca:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> pandas as pd</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> numpy as np</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> matplotlib.pyplot as plt</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Depois desses passos, estaremos prontos para começar a programar.</p>
+</section>
+<section id="estrutura-de-controles" class="level2">
+<h2 class="anchored" data-anchor-id="estrutura-de-controles">Estrutura de Controles</h2>
+<p>Quando falamos de otmização na programação, podemos nos referir a tipo de estruturas lógicas que nos permitem realizar tarefas eficazmente. Dentro do python essas estruturas são usadas para tomar decisões no código, são elas as seguintes:</p>
+<ul>
+<li><p><code>if</code>: Executa enquanto a condição for verdadeira;</p></li>
+<li><p><code>elif</code>: Se precisa de outra condição para ser analisada;</p></li>
+<li><p><code>else</code>: Se nenhuma das condições for verdadeira.</p></li>
+</ul>
+<p>Exemplo de código usando o vscode como ide:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20194518.png" class="img-fluid figure-img"></p>
+<figcaption>exemplo de if, elif e else</figcaption>
+</figure>
+</div>
+<p>Me retorna:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20195237.png" class="img-fluid figure-img"></p>
+<figcaption>retorno de if, elif e else</figcaption>
+</figure>
+</div>
+<p>Se eu alterar meu saque para um valor maior que meu limite extra:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20195835.png" class="img-fluid figure-img"></p>
+<figcaption>alteração no exemplo de if, elif e else</figcaption>
+</figure>
+</div>
+<p>Me retorna:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20200207.png" class="img-fluid figure-img"></p>
+<figcaption>retorno no exemplo de if, elif e else</figcaption>
+</figure>
+</div>
+<p><br><br> Para outros tipos de estruturas de controle:</p>
+<ul>
+<li><code>for</code>: Usado para repetir algo várias vezes;</li>
+</ul>
+<p>Exemplo de código usando o vscode como ide:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20201518.png" class="img-fluid figure-img"></p>
+<figcaption>exemplo usando o for</figcaption>
+</figure>
+</div>
+<p>me retorna: <img src="imagens/Captura%20de%20tela%202025-07-24%20200927.png" class="img-fluid" alt="retorno usando o for"></p>
+<ul>
+<li><code>while</code>: Repete enquanto a condição for verdadeira.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20201705.png" class="img-fluid figure-img"></p>
+<figcaption>exemplo usando while</figcaption>
+</figure>
+</div>
+<p>Me retorna:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20201822.png" class="img-fluid figure-img"></p>
+<figcaption>retorno usando while</figcaption>
+</figure>
+</div>
+</section>
+<section id="def-parâmetros-e-retorno" class="level2">
+<h2 class="anchored" data-anchor-id="def-parâmetros-e-retorno">Def, Parâmetros e Retorno</h2>
+<p>Podemos chamar <code>def</code> como uma definição de código para executar uma tarefa específica. Criamos def para criar uma função dando nome a ela e <code>parâmetro</code> como um valor que será passado de fora para ela e um valor que será retornado como<code>retorno</code>.</p>
+<p>Um exemplo utilizando o vscode como ide:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20214817.png" class="img-fluid figure-img"></p>
+<figcaption>exemplo usando def com parâmetro e retorno</figcaption>
+</figure>
+</div>
+<p>Agora o retorno:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Captura%20de%20tela%202025-07-24%20214937.png" class="img-fluid figure-img"></p>
+<figcaption>retorno usando def</figcaption>
+</figure>
+</div>
 </section>
 </section>
 
