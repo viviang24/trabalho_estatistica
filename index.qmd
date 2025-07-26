@@ -358,7 +358,7 @@ Você pode escrever qualquer valor ou texto dentro dos parênteses e ele será m
 
 ### Tuples, List e Dict
 
-Vale ressaltar tipos de estruturas ``mutáveis`` que podem ser alterados após criado e ``imutáveis`` nâo recebem alterações após criado. São eles:
+Vale ressaltar tipos de estruturas ``mutáveis`` que podem ser alterados após criado e ``imutáveis`` não recebem alterações após criado. São eles:
 
 - Tuples: Coleções ordenada de valores imutáveis, usamos parênteses ( ):
 ``` bash 
@@ -370,12 +370,12 @@ idades = (3, 90, 100)
 time = [ "palmeiras", 12, "maior campeão nacional" ]
 ``` 
 
-- Dict: Dicionário de coleção de atribuições valor: chave, usamos chaves { }:
+- Dict: Dicionário de coleção de atribuições valor: chave mutáveis, usamos chaves { }:
 ``` bash 
 empresa = { "id": 02 , "cpf": "000.000.000-00" , "email": "abcdef.gmail.com"}
 ```
 <br><br>
-Para começarmos os próximos passos vamos abordar para que servem cada biblioteca citadas mais acima. 
+Para começarmos os próximos passos, vamos abordar para que servem cada biblioteca citadas mais acima. 
 
 - ``Pandas``: Utilizado para ciência de dados, estatística, análises etc. Podemos fazer filtragens ler dados e organizar até grandes volumes de dados. 
 
